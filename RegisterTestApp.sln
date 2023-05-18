@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegisterTestApp.UI", "RegisterTestApp.UI\RegisterTestApp.UI.csproj", "{4EC7E8EA-4939-4684-B248-1FE0D8AA4E2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterTestApp.Service", "RegisterTestApp.BL\RegisterTestApp.Service.csproj", "{51DAA9FB-F30C-443D-B2DE-2342A41B0377}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegisterTestApp.Service", "RegisterTestApp.BL\RegisterTestApp.Service.csproj", "{51DAA9FB-F30C-443D-B2DE-2342A41B0377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterTestApp.Service.Tests", "tas\RegisterTestApp.Service.Tests\RegisterTestApp.Service.Tests.csproj", "{1BAA926D-761E-467D-A32B-5E8E5FA86E5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{51DAA9FB-F30C-443D-B2DE-2342A41B0377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51DAA9FB-F30C-443D-B2DE-2342A41B0377}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51DAA9FB-F30C-443D-B2DE-2342A41B0377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BAA926D-761E-467D-A32B-5E8E5FA86E5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BAA926D-761E-467D-A32B-5E8E5FA86E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BAA926D-761E-467D-A32B-5E8E5FA86E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BAA926D-761E-467D-A32B-5E8E5FA86E5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

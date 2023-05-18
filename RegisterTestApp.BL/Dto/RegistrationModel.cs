@@ -9,7 +9,7 @@ namespace RegisterTestApp.Service.Dto
         public string Email { get; set; }
         public string[] PhoneNumbers { get; set; }
 
-        [AdultAge]
+        [MinimumAllowedAge]
          public DateTime DateOfBirth { get; set; }
     }
 }

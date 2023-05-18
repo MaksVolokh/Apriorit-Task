@@ -21,7 +21,8 @@ public class RegisterController : ControllerBase
     {
         // Validation request model inside controller. (there is another validation based on attributes)
         // both are valid, and may be used any
-        DateTime minAllowedDate = DateTime.Now.Date.AddYears(-18);
+        const int MinimumAllowedAge = 18;
+        DateTime minAllowedDate = DateTime.Now.Date.AddYears(-MinimumAllowedAge);
 
         var isAdult = model.DateOfBirth > minAllowedDate;
 
