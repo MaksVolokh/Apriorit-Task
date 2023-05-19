@@ -11,10 +11,10 @@ namespace RegisterTestApp.Service.Tests
         {
 
             // Arrange
-            const int EighteenYearsOld = 18;
+            const int MinimumAllowedAge = 18;
             MinimumAllowedAgeAttribute eighteenYearsOld = new MinimumAllowedAgeAttribute();
 
-            DateTime value = DateTime.Now.Date.AddYears(-EighteenYearsOld);
+            DateTime value = DateTime.Now.Date.AddYears(-MinimumAllowedAge);
 
             // Act
             bool result = eighteenYearsOld.IsValid(value);
@@ -29,9 +29,9 @@ namespace RegisterTestApp.Service.Tests
         public void IsValid_ShouldReturnSuccess_WhenValueIsGreaterThanMinAllowedDate()
         {
             // Arrange
-            const int EighteenYearsOld = 18;
+            const int MinimumAllowedAge = 18;
             MinimumAllowedAgeAttribute eighteenYearsOld = new MinimumAllowedAgeAttribute();
-            DateTime value = DateTime.Now.Date.AddYears(-EighteenYearsOld).AddYears(-1);
+            DateTime value = DateTime.Now.Date.AddYears(-MinimumAllowedAge).AddYears(-1);
 
             // Act
             bool result = eighteenYearsOld.IsValid(value);
@@ -45,9 +45,9 @@ namespace RegisterTestApp.Service.Tests
         public void IsValid_ShouldReturnValidationError_WhenValueIsLessThanMinAllowedDate()
         {
             // Arrange
-            const int EighteenYearsOld = 18;
+            const int MinimumAllowedAge = 18;
             MinimumAllowedAgeAttribute eighteenYearsOld = new MinimumAllowedAgeAttribute();
-            DateTime value = DateTime.Now.Date.AddYears(-EighteenYearsOld).AddYears(1);
+            DateTime value = DateTime.Now.Date.AddYears(-MinimumAllowedAge).AddYears(1);
 
             // Act
             bool result = eighteenYearsOld.IsValid(value);
@@ -62,9 +62,9 @@ namespace RegisterTestApp.Service.Tests
         public void IsValid_ShouldReturnSuccess_WhenCriticalValueIsGreaterThanMinAllowedDate()
         {
             // Arrange
-            const int EighteenYearsOld = 18;
+            const int MinimumAllowedAge = 18;
             MinimumAllowedAgeAttribute eighteenYearsOld = new MinimumAllowedAgeAttribute();
-            DateTime value = DateTime.Now.Date.AddYears(-EighteenYearsOld).AddSeconds(-10.0);
+            DateTime value = DateTime.Now.Date.AddYears(-MinimumAllowedAge).AddSeconds(-10.0);
 
             // Act
             bool result = eighteenYearsOld.IsValid(value);
@@ -78,9 +78,9 @@ namespace RegisterTestApp.Service.Tests
         public void IsValid_ShouldReturnValidationError_WhenCriticalValueIsLessThanMinAllowedDate()
         {
             // Arrange
-            const int EighteenYearsOld = 18;
+            const int MinimumAllowedAge = 18;
             MinimumAllowedAgeAttribute eighteenYearsOld = new MinimumAllowedAgeAttribute();
-            DateTime value = DateTime.Now.Date.AddYears(-EighteenYearsOld).AddSeconds(10.0);
+            DateTime value = DateTime.Now.Date.AddYears(-MinimumAllowedAge).AddSeconds(10.0);
 
             // Act
             bool result = eighteenYearsOld.IsValid(value);

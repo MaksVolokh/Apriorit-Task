@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegisterTestApp.UI", "Regis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegisterTestApp.Service", "RegisterTestApp.BL\RegisterTestApp.Service.csproj", "{51DAA9FB-F30C-443D-B2DE-2342A41B0377}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterTestApp.Service.Tests", "tas\RegisterTestApp.Service.Tests\RegisterTestApp.Service.Tests.csproj", "{1BAA926D-761E-467D-A32B-5E8E5FA86E5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RegisterTestApp.Service.Tests", "tas\RegisterTestApp.Service.Tests\RegisterTestApp.Service.Tests.csproj", "{1BAA926D-761E-467D-A32B-5E8E5FA86E5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterTestApp.UI.Tests", "RegisterTestApp.UI.Tests\RegisterTestApp.UI.Tests\RegisterTestApp.UI.Tests.csproj", "{23C3343E-7F85-4316-89B1-356A6BA66A67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{1BAA926D-761E-467D-A32B-5E8E5FA86E5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BAA926D-761E-467D-A32B-5E8E5FA86E5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BAA926D-761E-467D-A32B-5E8E5FA86E5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23C3343E-7F85-4316-89B1-356A6BA66A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23C3343E-7F85-4316-89B1-356A6BA66A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23C3343E-7F85-4316-89B1-356A6BA66A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23C3343E-7F85-4316-89B1-356A6BA66A67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
